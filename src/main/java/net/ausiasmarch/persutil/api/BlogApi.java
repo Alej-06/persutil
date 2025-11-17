@@ -59,11 +59,18 @@ public class BlogApi {
         return ResponseEntity.ok(oAleatorioService.GenerarNumeroAleatorioEnteroEnRango(min, max));
     }
 
-    @GetMapping("/rellenauno")
-    public ResponseEntity<Long> rellenaBlog() {
-        return ResponseEntity.ok(oBlogService.rellenaBlog());
+    //---------------------------Rellenar datos fake blog---------------------------------
+
+    @GetMapping("/rellena/{numPosts}")
+    public ResponseEntity<Long> rellenaBlog(
+            @PathVariable int numPosts
+    ) {
+        return ResponseEntity.ok(oBlogService.rellenaBlog(numPosts));
     }
 
+
+
+    
     // ----------------------------CRUD---------------------------------
 
     // obtener post por id
