@@ -30,8 +30,27 @@ CREATE TABLE `blog` (
   `fecha_modificacion` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_unicode_ci;
 
--- --------------------------------------------------------
+--
+-- Índices para tablas volcadas
+--
 
+--
+-- Indices de la tabla `blog`
+--
+ALTER TABLE `blog`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `blog`
+--
+ALTER TABLE `blog`
+  MODIFY `id` bigint NOT NULL AUTO_INCREMENT;
+
+----------------------------------------Alejandro Pavón Martínez-------------------------------------------------
 --
 -- Estructura de tabla para la tabla `recurso`
 --
@@ -62,12 +81,6 @@ INSERT INTO `recurso` (`id`, `nombre`, `url`, `fecha_creacion`, `fecha_modificac
 --
 
 --
--- Indices de la tabla `blog`
---
-ALTER TABLE `blog`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indices de la tabla `recurso`
 --
 ALTER TABLE `recurso`
@@ -78,14 +91,8 @@ ALTER TABLE `recurso`
 --
 
 --
--- AUTO_INCREMENT de la tabla `blog`
---
-ALTER TABLE `blog`
-  MODIFY `id` bigint NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT de la tabla `recurso`
 --
 ALTER TABLE `recurso`
-  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;  
 COMMIT;
