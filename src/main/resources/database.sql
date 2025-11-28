@@ -50,7 +50,7 @@ ALTER TABLE `blog`
 ALTER TABLE `blog`
   MODIFY `id` bigint NOT NULL AUTO_INCREMENT;
 
-----------------------------------------Alejandro Pavón Martínez-------------------------------------------------
+-- --------------------------------------Alejandro Pavón Martínez-------------------------------------------------
 --
 -- Estructura de tabla para la tabla `recurso`
 --
