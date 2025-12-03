@@ -62,4 +62,9 @@ public class PavonApi {
     public ResponseEntity<Long> count() {
         return ResponseEntity.ok(oPavonService.count()); 
     }
+
+    @PostMapping("/generate-fake/{cantidad}")
+    public ResponseEntity<Long> generateFakeData(@PathVariable int cantidad) {
+        return ResponseEntity.ok(oPavonService.generateFakeData(cantidad));
+    }
 }
